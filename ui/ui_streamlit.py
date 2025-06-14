@@ -25,19 +25,15 @@ st.title("📝 Job‑Description Suggestor Agent")
 with st.sidebar:
     st.header("Hiring‑Manager Inputs")
     job_title = st.text_input("Job Title*", placeholder="Senior Data Engineer")
-    skills = st.text_area("Skills (comma‑separated)*", height=80)
+    context = st.text_area("Enter your desired candidates qualities*", height=150)
     years_exp = st.number_input("Years of Experience*", min_value=0, max_value=40, value=3)
-    education = st.text_input("Education", placeholder="BS in CS or related")
-    work_auth = st.text_input("Work Authorization", placeholder="Any / US‑Work‑Permit")
     skip_draft = st.checkbox("Skip to Final JD (uses GPT‑4o only)")
 
-    if st.button("Generate" ) and job_title and skills:
+    if st.button("Generate" ) and job_title:
         st.session_state["ctx"] = dict(
             job_title=job_title,
-            skills=skills,
-            years_exp=years_exp,
-            education=education,
-            work_auth=work_auth,
+            context=context,
+            years_exp=years_exp
         )
         st.session_state["phase"] = "draft_skipped" if skip_draft else "draft"
         for key in ("draft_jd", "full_jd", "version"):
@@ -77,7 +73,7 @@ if st.session_state.get("phase") == "draft":
 if st.session_state.get("phase") == "draft_skipped":
     ctx = st.session_state["ctx"]
     auto_draft = (
-        f"Role: {ctx['job_title']}\nSkills: {ctx['skills']}\nYears Exp: {ctx['years_exp']}\nEducation: {ctx['education']}"
+        f"Role: {ctx['job_title']}\Hiring Manager Context abuot the role: {ctx['context']}\nYears Exp: {ctx['years_exp']}"
     )
     st.session_state["draft_jd"] = auto_draft
     st.session_state["phase"] = "final"

@@ -1,84 +1,30 @@
-Company Name: Microsoft, Microsoft
-Title: Member of Technical Staff - Data Engineer
-Description:
-As Microsoft continues to push the boundaries of AI, we are on the lookout for passionate individuals to work with us on the most interesting and challenging AI questions of our time. Our vision is bold and broad — to build systems that have true artificial intelligence across agents, applications, services, and infrastructure. It’s also inclusive: we aim to make AI accessible to all — consumers, businesses, developers — so that everyone can realize its benefits.
-   
+National Sales Head
+Location: Noida Experience: 20+ Years
+Job Description:
+Formulate Sales strategies to; (a) drive top line growth in domestic as well as export market and prepare innovative plans to achieve higher value realization, (b) for brand management, evaluation and market promotion strategies, for various existing / new products
 
-  
+Develop sales plans, strategies and policies with a view to increase/sustain market share and profitability.
+Have effective implementation and monitoring mechanism to ensure achievement of the Sales plans and strategies.
+Formulate policies and guidelines for smooth functioning and satisfaction of channel partners like dealers, distributors and stockiest.
+Scan the environment to understand competitor’s activities, demand supply scenario, regulatory issues to formulate strategies for increasing market share
+Ensure an increased market share and profitability by facilitating market development, brand management and business development. Focus on business development through domestic / export markets (defined geographies) and building the brand of the company in the domestic /exports market.
+Continuously monitor the pricing patterns within the market, checking the prices for the desired products regularly with respect to their competitiveness and value as perceived by the customers, deciding upon pricing from time to time on a need basis to ensure the products are sold with highest recoveries possible.
+Initiate market intelligence system to provide monthly information to top management on potential data, competitor’s activities, new product opportunities and other changes in the environment.
+Evolve policies for establishing a robust field force monitoring and people management, relationship management system in order to increase field force satisfaction and portfolio growth.
+Managing the complete sales cycle from business development and customer acquisition to receipt of payments.
+Industry: FMCG/ Food Processing
 
- Microsoft AI (MS AI) is seeking experienced Data Engineers to help build mission critical data pipelines that ingest, process and publishes data streams from our personal AI, Copilot systems. We’re looking for someone who possesses technical prowess, a methodical approach to problem\-solving, proficiency in big data processing technologies, and a mastery of templating to architect solutions that stand the test of time and who will bring an abundance of positive energy, empathy, and kindness to the team every day, in addition to being highly effective. The Data Platform Engineering team is responsible for building core data pipelines that help fine tune models, support introspection and retrospection of data so that we can constantly evolve and improve human AI interactions.
-   
+Qualifications: Any Graduate, MBA/PGDM in Sales & Marketing (Preferred)
 
-  
+Key Accountabilities:
 
- Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.
-   
-
-  
-
-*By applying to this U.S. New York, New York OR* 
-*Mountain View, CA OR Redmond, WA* 
-*posi* 
-*tion, you are required to be local to the New York* 
-*OR San Francisco OR Seattle* 
-*area and in office 3 days a week.* 
-  
-
-  
-
-**Responsibilities**
-* Build scalable data pipelines for sourcing, transforming and publishing data assets for AI use cases
-* Work collaboratively with other Platform, infrastructure, application engineers as well as AI Researchers to build next generation data platform products and services.
-* Ship high\-quality, well\-tested, secure, and maintainable code.
-* Find a path to get things done despite roadblocks to get your work into the hands of users quickly and iteratively.
-* Enjoy working in a fast\-paced, design\-driven, product development cycle.
-* Embody our Culture and Values.
-
-
-**Qualifications**
-**Required Qualifications:**
-* Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 6\+ years experience in software development, data modeling or data engineering work
-+ OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 4\+ year(s) experience in software development, or data engineering work
-+ OR equivalent experience.
-
-* 5\+ years technical engineering experience building data processing applications (batch and streaming) with coding in languages including, but not limited to, Python, Java, Spark, SQL.
-* Experience working with Apache Hadoop eco system, Kafka, NoSQL, etc.
-* 2\+ years' experience building scalable services on top of public cloud infrastructure like Azure, AWS, or GCP. Extensive use datastores like RDBMS, key\-value stores, etc.
-* 2\+ years' experience building distributed systems at scale and extensive systems knowledge that spans bare\-metal hosts to containers to networking.
-
-
-**Preferred Qualifications:** 
-  
-
-  
-
-* Ability to identify, analyze, and resolve complex technical issues, ensuring optimal performance, scalability, and user experience.
-* Dedication to writing clean, maintainable, and well\-documented code with a focus on application quality, performance, and security.
-* Demonstrated interpersonal skills and ability to work closely with cross\-functional teams, including product managers, designers, and other engineers.
-* Ability to clearly communicate complex technical concepts to both technical and non\-technical stakeholders.
-* Passion for learning new technologies and staying up to date with industry trends, best practices, and emerging technologies in web development and AI.
-* Ability to work in a fast\-paced environment, manage multiple priorities, and adapt to changing requirements and deadlines.
-* Proven ability to collaborate and contribute to a positive, inclusive work environment, fostering knowledge sharing and growth within the team.
-
-
- Data Engineering IC5 \- The typical base pay range for this role across the U.S. is USD $137,600 \- $267,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $180,400 \- $294,000 per year.
-   
-
-  
-
- Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-   
-
-  
-
- Microsoft will accept applications and processes offers for these roles on an ongoing basis.
-   
-
-  
-
- \#MicrosoftAI \#copilot
-   
-
-  
-
- Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.
+Meeting sales targets & objectives
+Market share growth - Strengthening & expanding distribution network
+Identification & development of new markets
+Implementation of initiatives and Sales & Marketing strategies, Retail strategy, Modern Trade, Institutional Sales
+Establish CRM tools and systems
+Relationship building & customer satisfaction with key accounts / CSA / Retailers / Stockists.
+Cost optimization in retail operations
+Development of a market intelligence/ information system
+Training, development & monitoring of sales & distribution personnel
+Interested candidates may send their resume to career@dsgroup.com

@@ -16,7 +16,7 @@ def finalize(draft_jd: str,
     draft_jd : str
         The draft job description produced by the local model.
     ctx : dict
-        Entire JSON payload containing job_title, skills, years_exp, etc.
+        Entire JSON payload containing job_title, hiring manager context, years_exp, etc.
     corpus_texts : list[str]
         Raw text of historical company JDs.
     index : faiss.Index
@@ -39,6 +39,9 @@ def finalize(draft_jd: str,
     )
 
     prompt = textwrap.dedent(f"""
+                             
+        ### About the Company:
+                                
         ### Hiring‑Manager Inputs (JSON)
         {ctx_json}
 

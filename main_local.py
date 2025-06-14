@@ -33,6 +33,8 @@ def main():
     # 1. Ask if they want a quick draft or skip to final
     choice = input("\nType 'draft' for quick preview or 'final' to jump straight "
                    "to company‑aligned JD: ").strip().lower()
+    
+    
 
     if choice == "draft":
         # ── Draft JD via local model + feedback loop ──────────────────────
@@ -46,15 +48,15 @@ def main():
             jd = local_generate(
                 fb + "\n\n" + jd,
                 system="Revise the draft JD accordingly.",
-                max_tokens=400)
+                max_tokens=1000)
             print("\n── Updated Draft ──\n", jd)
 
         ctx["draft_jd"] = jd
 
     else:  # choice == "final"
         # Skip local model; build a minimal draft from inputs for context
-        auto_draft = f"Role: {ctx['job_title']}\nSkills: {ctx['skills']}\n" \
-                     f"Years Exp: {ctx['years_exp']}\nEducation: {ctx['education']}"
+        auto_draft = f"Role: {ctx['job_title']}\Hiring Manager Context about the role: {ctx['context']}\n"\
+                     f"Years Exp: {ctx['years_exp']}"
         ctx["draft_jd"] = auto_draft
         print("\n(Skipping draft loop, going straight to final JD…)")
 

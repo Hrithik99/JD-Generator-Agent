@@ -3,9 +3,9 @@
 *.env
 
 # Python bytecode
-__pycache__/
-app/__pycache__/
-app/core/__pycache__/
+__pycache__/*
+app/__pycache__/*
+app/core/__pycache__/*
 *.py[cod]
 
 # Virtual environments

@@ -1,72 +1,29 @@
-Company Name: Microsoft, Microsoft
-Title: Member of Technical Staff – Data Engineer
-Description:
-**Overview**
- As Microsoft continues to push the boundaries of AI, we are on the lookout for passionate individuals to work with us on the most interesting and challenging AI questions of our time. Our vision is bold and broad — to build systems that have true artificial intelligence across agents, applications, services, and infrastructure. It’s also inclusive: we aim to make AI accessible to all — consumers, businesses, developers — so that everyone can realize its benefits.
-   
+GM Sales (General Trade) – MP/Gujarat
+Location: Bhopal/Ahmedabad Experience: 16+ Years of experience
+Job Description:
+Responsible for effective implementation of sales strategies & policies in assigned area and meeting sales targets & objectives
+Implement sales plans, strategies and policies with a view to increase/sustain market share and profitability for assigned region
+Implement policies and guidelines for smooth functioning and satisfaction of channel partners like dealers, distributors and stockiest in assigned region
+Scan the environment to understand competitor’s activities, demand supply scenario, regulatory issues to formulate strategies for increasing market share in assigned area
+Ensure an increased market share and profitability by facilitating market development, brand management and business development and building the brand of the company in the assigned area
+Implement market intelligence system to provide monthly information on potential data, competitors? activities, new product opportunities and other changes in the environment for assigned area
+Effectively implement policies for robust field force monitoring and people management, relationship management system in order to increase field force satisfaction and portfolio growth
+Managing the complete sales cycle in assigned region from business development and customer acquisition to receipt of payments
+Business: Confectionery
 
-  
+Industry: FMCG/ Food Processing
 
- Microsoft AI (MS AI) is seeking an experienced Data Engineer to help architect, design and implement a highly scalable and optimized data platform for processing 50TB/day of data from AI systems. We’re looking for someone who possesses technical prowess, a methodical approach to problem\-solving, proficiency in data platform and pipeline technologies, and a mastery of templating to architect solutions that stand the test of time and who will bring an abundance of positive energy, empathy, and kindness to the team every day, in addition to being highly effective. The right candidate enjoys building world\-class data platforms that are scalable, maintainable and kept up to date with current tech stacks and design patterns.
-   
+Qualifications: Any Graduate, MBA/PGDM in Sales & Marketing (Preferred)
 
-  
+Key Accountabilities:
 
- Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.
-   
+Meeting sales targets & objectives for assigned region
+Market share growth - strengthening & expanding distribution network
+Identification & development of new markets in assigned region
+Implementation of initiatives and Sales & Marketing strategies and Retail strategy
+Relationship building & Customer Satisfaction with key accounts / CSA / Retailers / Stockists in assigned region
+Implementation of a market intelligence/ information system
+Training, development & monitoring of sales & distribution personnel, in lie with SBU's strategies, plans & policies
+Functional Area: Sales
 
-  
-
-*By applying to this U.S. New York, New York position, you are required to be local to the New York area and in office 3 days a week.*
-**Responsibilities**
-* Thought leader and owner of the architecture blueprint of data platform
-* Superior coding skills in SPARK using Scala, Python and Java
-* Work collaboratively with other Platform, infrastructure, application engineers as well as AI Researchers to build next generation data platform services and capabilities.
-* Ship high\-quality, well\-tested, secure, and maintainable code.
-* Find a path to get things done despite roadblocks to get your work into the hands of users quickly and iteratively.
-* Enjoy working in a fast\-paced, design\-driven, product development cycle.
-* Embody our Culture and Values.
-
-
-**Qualifications**
-**Required Qualifications:**
-* Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 8\+ years experience in software development, data modeling or data engineering work
-* OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 6\+ year(s) experience in software development, or data engineering work
-* OR equivalent experience.
-* 5\+ years of hands experience in building from ground up large scale data processing platforms with more than 100 data pipelines. Use of Apache Hadoop eco system, Kafka Stream/Flink, columnar databases, vector databases, semantic search technologies, RDBMS databases, key value stores, etc.
-* 5\+ years' experience building scalable services on top of public cloud infrastructure like Azure, AWS, or GCP.
-* 2\+ years' experience building distributed systems at scale and extensive systems knowledge that spans bare\-metal hosts to containers to networking.
-
-
-**Preferred Qualifications**
-* 10\+ years technical engineering experience building data platforms that handle large volumes of data in both batch and real time. Coding in languages including, but not limited to, Python, C\#, Java, Spark, SQL
-* Ability to identify, analyze, and resolve complex technical issues, ensuring optimal performance, scalability, and user experience.
-* Dedication to writing clean, maintainable, and well\-documented code with a focus on application quality, performance, and security.
-* Demonstrated interpersonal skills and ability to work closely with cross\-functional teams, including product managers, designers, and other engineers.
-* Ability to clearly communicate complex technical concepts to both technical and non\-technical stakeholders.
-* Passion for learning new technologies and staying up to date with industry trends, best practices, and emerging technologies in web development and AI.
-* Ability to work in a fast\-paced environment, manage multiple priorities, and adapt to changing requirements and deadlines.
-* Proven ability to collaborate and contribute to a positive, inclusive work environment, fostering knowledge sharing and growth within the team.
-
-
- Data Engineering IC6 \- The typical base pay range for this role across the U.S. is USD $161,600 \- $286,200 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $209,600 \- $314,400 per year.
-   
-
-  
-
- Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-   
-
-  
-
- Microsoft will accept applications and processes offers for these roles on an ongoing basis.
-   
-
-  
-
- Microsoft will accept applications and processes offers for these roles on an ongoing basis.
-   
-
-  
-
- \#copilot \#microsoftai
+Interested candidates may send their resume to career@dsgroup.com

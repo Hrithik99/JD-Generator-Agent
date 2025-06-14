@@ -86,7 +86,7 @@ python -m uvicorn app.main:app --reload
 Run frontend:
 
 ```bash
-streamlit run ui/ui_streamlit.py
+streamlit run ui/ui_streamlit_fastapi.py
 ```
 
 ---

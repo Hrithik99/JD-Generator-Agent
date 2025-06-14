@@ -1,11 +1,11 @@
 import click, json, datetime, pathlib
 
-FIELDS = ["job_title", "skills", "years_exp", "education", "work_auth"]
+FIELDS = ["job_title", "context", "years_exp"]
 
 def collect_inputs():
     ctx = {}
     for field in FIELDS:
-        required = field != "work_auth"
+        required = 1
         ctx[field] = click.prompt(
             f"{field.replace('_',' ').title()}",
             default="" if not required else None,

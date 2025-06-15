@@ -9,7 +9,7 @@ import os, requests, streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 
-API = "http://127.0.0.1:8000"
+API = "http://backend:8000"
 company_URL=os.getenv('COMPANY_URL')
 company_name=os.getenv('COMPANY_NAME')
 job_type=os.getenv('JOB_TYPE')

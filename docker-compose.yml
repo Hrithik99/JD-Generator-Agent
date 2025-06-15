@@ -1,5 +1,3 @@
-# docker-compose.yml
-
 services:
   # 🔴 Redis – for session storage
   redis:
@@ -9,7 +7,9 @@ services:
 
   # ⚙️ FastAPI backend
   backend:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerfile
     depends_on:
       redis:
         condition: service_started
@@ -19,20 +19,15 @@ services:
 
   # 📊 Streamlit frontend
   ui:
-    image: python:3.11-slim
-    working_dir: /app
-    volumes:
-      - .:/app
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
     env_file: .env
-    command: >
-      sh -c "pip install -r requirements.txt &&
-             streamlit run ui/ui_streamlit.py
-             --server.port 8501 --server.address 0.0.0.0"
+    ports:
+      - "8501:8501"
     depends_on:
       backend:
         condition: service_started
-    ports:
-      - "8501:8501"
 
 volumes:
   redis_data:

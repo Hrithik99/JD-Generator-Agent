@@ -1,8 +1,0 @@
-{
-  "job_title": "data engineer",
-  "skills": "etl, sql,was,spark,mlops,informatica,python,pyspark,leadership qualities, collaboration with stakeholder, worked with clinical data",
-  "years_exp": "3+",
-  "education": "Master in computer science or statistical degree like data science or data analystics",
-  "work_auth": "None",
-  "draft_jd": "[JD Header]\nTitle: Data Engineer - [Company Name]\n\n[Job Summary]\nThe Data Engineer is responsible for developing and maintaining scalable and reliable data systems using various tools and technologies such as ETL, SQL, Python, PySpark, MLops, InfoMatica, Pythons, PySpark, Leaderships skills. The Data Engineer will collaborate with the Stakeholder to ensure that clinical data is accurately captured, processed, and analyzed for various purposes.\n\n[Required Skills]\n- Experience in ETL (Extract, Transform, Load)\n- Experience in SQL (Structured Query Language)\n- Python (Data Science, Machine Learning, Natural Language Processing, etc.)\n- PySpark (Data Pipelining, Data Streaming, Machine Learning, etc.)\n- MLops (Machine Learning Operations Platform)\n- InfoMatica (Enterprise Data Management System)\n- Python and Python libraries (Pandas, NumPy, Scikit-learn, TensorFlow, etc.)\n- PySpark and Spark SQL (DataFrame, SQL, DataFrame, DataFrame, etc.)\n- Leaderships skills (Collaboration with Stakeholders, Communication, Problem Solving, Adaptability, etc.)\n\n[Preffered Skills]\n- Experience in Leadership\n- Experience in Agile Development Methodology\n- Experience in Data Science and Machine Learning\n- Experience in Python and SQL for data analysis\n- Experience in Hadoop (HDFS, YARN, MapReduce"
-}

@@ -11,7 +11,7 @@ Typical issues we strip:
 Call `clean_markdown()` on any LLM output before saving or displaying.
 """
 
-import re
+import re,json
 
 # Pre‑compiled regex patterns -------------------------------------------------
 _FENCE_START = re.compile(r"^\s*```[a-zA-Z0-9]*\s*\n", flags=re.MULTILINE)
@@ -29,3 +29,9 @@ def clean_markdown(md: str | None) -> str:
     out = _DIV_TAGS.sub("", out)
 
     return out.strip()
+
+
+def clean_llm_json(output: str):
+    output = re.sub(r"```(json)?", "", output).strip("` \n")
+    #print(output)
+    return json.loads(output)

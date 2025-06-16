@@ -14,7 +14,7 @@ OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL", "orca-mini")
 URL             = f"{OLLAMA_HOST}/api/generate"
 HEADERS         = {"Content-Type": "application/json"}
 
-print(f"[local_model] OLLAMA_DISABLED = {OLLAMA_DISABLED}")
+#print(f"[local_model] OLLAMA_DISABLED = {OLLAMA_DISABLED}")
 
 def _call_ollama(prompt: str, system: str | None, max_tokens: int, temperature: float):
     print("[local_model] → Trying Ollama")
@@ -44,8 +44,7 @@ def generate(prompt: str,
         except (RequestException, Timeout) as e:
             # Log once, then continue to fallback
             print("[local_model] Ollama unavailable – using GPT‑4o‑mini. Reason:", e)
-    else:
-        print("[local_model] Ollama disabled, using GPT‑4o directly")
+        #print("[local_model] Ollama disabled, using GPT‑4o directly")
     # --- Fallback ---
     fallback_system = system or "You are an HR assistant who writes concise draft job descriptions."
     return gpt_generate(prompt, fallback_system, max_tokens=max_tokens, temperature=temperature)

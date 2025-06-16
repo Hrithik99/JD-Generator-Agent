@@ -48,67 +48,92 @@ def finalize(
     k: int = 3,
     company_url: Optional[str] = None,
 ) -> str:
-    """Return a single Markdown JD, optionally preceded by About‑Company."""
+    """
+    Merge the strong draft with About-Company (optional) and tone examples,
+    returning a polished Markdown JD.  The DraftJD is **authoritative**: never
+    remove or contradict its content—only refine, re-order, or expand.
+    """
 
-    # 1⃣  About‑Company (may be empty)
+    # 1⃣  Optional About-Company section
     company_url = company_url or ctx.get("company_url") or os.getenv("COMPANY_URL")
     about_company = ""
     if company_url:
         try:
+            from .generate_full_jd import generate_about_company
             about_company = generate_about_company(company_url)
         except Exception as exc:  # pragma: no cover
-            print(f"[warn] About‑company generation failed: {exc}")
+            print(f"[warn] About-company generation failed: {exc}")
 
-    # 2⃣  Retrieve prior JDs for tone mimicry
+    # 2⃣  Retrieve similar JDs for tone
     examples = retrieve(draft_jd, corpus_texts, index, k=k)
 
-    # 3⃣  Build prompt that lets the LLM merge everything
+    # 3⃣  Build prompt
     ctx_json = json.dumps(ctx, indent=2)
-
     system = (
-    "You are a senior HR copy-writer. Produce a polished, ATS-ready job description in Markdown **only** "
-    "(no code fences, HTML, or commentary).\n"
-    "\n"
-    "Begin with a 4-line header block in this order — one line each:\n"
-    "Job Description: <Job Title>\n"
-    "<Company Name>\n"
-    "<Job Type>\n"
-    "<Location>\n"
-    "\n"
-    "Leave one blank line, then **if** *AboutCompany* is supplied add:\n"
-    "### About the Company\n"
-    "(insert text)\n"
-    "\n"
-    "After that, write the rest of the JD, mirroring the headings / bullet style in *CompanyExamples*.\n"
-    "Keep total length ≈ 450 words and preserve every critical requirement from *DraftJD* and *HiringManagerJSON*."
+        "You are a senior HR copy-writer.  Output Markdown only – no HTML, no code "
+        "fences, no explanations.  Follow the template exactly. "
+        "Do not add ant additional fabricated or generic PII information like email or instruction if not specifically mentioned in the inputs provided."
     )
 
-    prompt = textwrap.dedent(
-    f'''
-    ## Inputs
-    ### HiringManagerJSON
-    {ctx_json}
+    template = textwrap.dedent("""\
+        # {job_title}
 
-    ### AboutCompany (optional)
-    {about_company or 'N/A'}
+        {company_name}  
+        {job_type}  
+        {location}
 
-    ### DraftJD
-    {draft_jd}
+        {about_block}
 
-    ### CompanyExamples
-    {examples}
+        ## Responsibilities
+        (retain, polish and extrapolate bullets from DraftJD and simlar job descirption provided in exaples, if any)
 
-    ## Task
-    Using the guidelines in the *system* prompt, output the **final** job description in Markdown only
-    (no code fences, no extra explanations). Make sure the top block contains the four required lines
-    in the order specified, then the “About the Company” section if present, then the JD body.
-    '''
-    )
+        ## Required Skills
+        (retain & polish bullets from DraftJD and simlar job descirption provided in exaples, if any)
 
+        ## Preferred Skills
+        (retain & polish bullets from DraftJD and simlar job descirption provided in exaples, if any)
 
-    jd_markdown = gpt_generate(prompt, system, max_tokens=900).strip()
+        ## Benefits
+        (retain & polish bullets from DraftJD, if any)
+    """)
 
-    return clean_markdown(jd_markdown)
+    prompt = textwrap.dedent(f"""
+        ### Context
+        **HiringManagerJSON**
+        {ctx_json}
+
+        ### Template
+        Fill this template strictly.  Replace the bracketed placeholders.  If a
+        section does not exist in DraftJD, omit that whole section header.
+
+        ```markdown
+        {template}
+        ```
+
+        ### AboutCompany (optional)
+        Replace {{about_block}} above with this, *verbatim*, under a heading
+        `## About the Company` – otherwise delete {{about_block}}.
+
+        {about_company or 'N/A'}
+
+        ### DraftJD  (authoritative – keep all content)
+        {draft_jd}
+
+        ### CompanyExamples  (tone/style only)
+        {examples}
+
+        ### Task
+        1. Copy every bullet or sentence from DraftJD into the matching section.
+        2. You may re-phrase for clarity and add short, logical expansions to skillset from examples [if the match is high].
+        3. **Never remove a requirement from DraftJD.**
+        4. If any detail (email, address, team info) is not given, delete that line
+        – do **NOT** create placeholders.
+        5. Return Markdown only.
+    """)
+
+    jd_markdown = clean_markdown(gpt_generate(prompt, system, max_tokens=900).strip())
+    print(jd_markdown)
+    return jd_markdown
 
 # ---------------------------------------------------------------------------
 # Feedback revision helper

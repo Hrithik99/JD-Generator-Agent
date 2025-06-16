@@ -8,7 +8,8 @@ FILES, TEXTS = load_corpus("data/corpus")
 INDEX = build_or_load_faiss(TEXTS)
 
 # Redis configuration — defaults to localhost for local dev
-REDIS_HOST = os.getenv("REDIS_HOST", "127.0.0.1")  # fallback to localhost if not set
+#REDIS_HOST = os.getenv("REDIS_HOST", "127.0.0.1")  # fallback to localhost if not set
+REDIS_HOST="127.0.0.1"
 REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
 
 # Redis connection object
